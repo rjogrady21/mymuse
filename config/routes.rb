@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'poems', to: 'poems#index'
-  get 'books', to: 'books#index'
-  get 'films', to: 'films#index'
-  get 'plays', to: 'plays#index'
-  get 'arts', to: 'arts#index'
+  resources :books, except: [:show]
+  resources :poems, except: [:show]
+  resources :plays, except: [:show]
+  resources :films, except: [:show]
+  resources :arts, except: [:show]
 end
