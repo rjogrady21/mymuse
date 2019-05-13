@@ -1,0 +1,11 @@
+<%= form_for(@play) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :playwright %>
+  <%= f.text_field :playwright %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :date %>
+  <%= f.text_field :date %>
+  <%= f.submit %>
+<% end %>
